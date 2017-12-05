@@ -1,0 +1,83 @@
+baseURL = "http://www.benweis.me"
+title = "Benjamin Weis"
+theme = "minimo"
+
+disqusShortname = "benweis"
+googleAnalytics = ""
+
+Paginate = 15
+preserveTaxonomyNames = true
+enableRobotsTXT = true # generate robots.txt
+pygmentsCodefences = true
+defaultContentLanguage = "en"
+disablePathToLower = false
+
+[params.info]
+  description = "Software Engineer soon to be living in San Francisco."
+  title404 = "Nothing's here!"
+
+[params.assets]
+  favicon = "favicon.ico"
+  customCSS = ["css/custom.css"]
+  customJS = ["js/custom.js"]
+  gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+
+[params.copyright]
+  prefix = ""
+  holder = "Benjamin Weis"
+  startYear = "2017"
+  suffix = ""
+
+[params.settings]
+  dateFormat = "2006, Jan 02"
+  listDateFormat = "2006, Jan 02"
+  hideEntryNavigation = ["page"] # boolean / array of sections
+  hideSocialMenu = false
+  showReadingTime = true
+  noTermCloudShuffle = false
+
+[params.opengraph.facebook]
+  admins = [] # array of Facebook IDs
+  appID = ""
+  pageID = ""
+
+[params.opengraph.twitter]
+  page = "" # Twitter page username
+
+[params.seo]
+  # Title Separator: - – — · • * ⋆ | ~ « » < >
+  titleSeparator = "-"
+
+[params.social]
+  email = "bweis96@gmail.com"
+  facebook = "bweis96"
+  github = "mozrila"
+  linkedin = "bweis96"
+  twitter = "Real_Ben_Weis"
+
+[params.social.config]
+  platforms = ["github","facebook","twitter","email","linkedin"]
+
+[taxonomies]
+  author = "authors"
+  category = "categories"
+  tag = "tags"
+
+[permalinks]
+  page = "/:slug/"
+
+[[menu.main]]
+  name = "Resume"
+  weight = -70
+  identifier = "resume"
+  url = "/BenWeis.pdf"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[languages]
+  # edit this block for your own language
+  [languages.en]
+    lang = "en"
+    languageName = "English"
+    weight = 1

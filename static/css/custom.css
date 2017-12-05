@@ -1,0 +1,34 @@
+@font-face {
+	font-family: "Colfax";
+    src: url("/fonts/Colfax-Regular.eot?") format("eot"),
+         url("/fonts/Colfax-Regular.ttf") format("truetype"),
+         url("/fonts/Colfax-Regular.woff") format("woff"),
+         url("/fonts/Colfax-Regular.svg#Colfax-Regular") format("svg");
+}
+
+body {
+    font-family: "Colfax", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Siyam Rupali", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.title, body, button, h1, h2, h3, h4, h5, h6, input, select, textarea {
+    font-family: "Colfax", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Siyam Rupali", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    color: #111;
+}
+
+/*
+.comments-container #disqus_thread:before, .entry+.list-container:before, .entry-header:after, .entry-nav-links:before, .footer:before, .prev-entry~.next-entry:before, .site-header:after {
+    border-bottom: .11111em solid #D17F15 !important;
+} 
+ */
+
+.entry-content a {
+    border-bottom: .01em solid #ffcd00;
+    color: #ffcd00;
+}
