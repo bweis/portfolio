@@ -25,10 +25,20 @@ p {
 /*
 .comments-container #disqus_thread:before, .entry+.list-container:before, .entry-header:after, .entry-nav-links:before, .footer:before, .prev-entry~.next-entry:before, .site-header:after {
     border-bottom: .11111em solid #D17F15 !important;
-} 
+}
  */
 
+/* CONTENT LINK COLORS */
 .entry-content a {
-    border-bottom: .01em solid #ffcd00;
-    color: #ffcd00;
+    border-bottom: .01em solid #98700D;
+    color: #98700D;
+}
+.entry-content a:active, .entry-content a:focus, .entry-content a:hover {
+		font-weight: bold;
+		border-bottom: none;
+}
+
+/* COLOR OF BARS */
+.comments-container #disqus_thread:before, .entry+.home-sections-container .home-sections:before, .entry-nav:before, .footer:before, .header:after, .home-section+.home-section:before, .prev-entry~.next-entry:before {
+    border-bottom: .125em solid #98700D !important;
 }
