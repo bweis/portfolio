@@ -4,19 +4,20 @@
 # the changes inside of the /public folder. I have a 
 # separate repository where the deployed site lives.
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
-
+echo -e "\033[0;32mCleaning public directory...\033[0m"
 cd public
-setopt extendedglob
-rm -rf ^.git/
-rm *
+shopt -s extglob
+rm -r !(.git)
 cd ..
 
-hugo
 
+echo -e "\033[0;32mBuilding website...\033[0m"
+hugo
 cd public
 git add .
 
+
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 msg="Rebuilding portfolio: `date`"
 if [ $# -eq 1 ]
   then msg="$1"
