@@ -72,7 +72,7 @@ disablePathToLower = false
   name = "Resume"
   weight = -70
   identifier = "resume"
-  url = "/BenWeisResume.pdf"
+  url = "/ben_weis_resume.pdf"
 
 [blackfriday]
 hrefTargetBlank = true

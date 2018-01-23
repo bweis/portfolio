@@ -5,6 +5,13 @@
 # separate repository where the deployed site lives.
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+cd public
+setopt extendedglob
+rm -rf ^.git/
+rm *
+cd ..
+
 hugo
 
 cd public
