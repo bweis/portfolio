@@ -13,7 +13,7 @@ defaultContentLanguage = "en"
 disablePathToLower = false
 
 [params.info]
-  description = "Software Engineer soon to be living in San Francisco."
+  description = "Software Engineer and Burrito Enthusiast"
   title404 = "Nothing's here!"
 
 [params.assets]
@@ -72,7 +72,7 @@ disablePathToLower = false
   name = "Resume"
   weight = -70
   identifier = "resume"
-  url = "/BenWeis.pdf"
+  url = "/BenWeisResume.pdf"
 
 [blackfriday]
 hrefTargetBlank = true
