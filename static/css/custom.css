@@ -1,3 +1,4 @@
+/* FONTS */
 @font-face {
 	font-family: "Colfax";
     src: url("/fonts/Colfax-Regular.eot?") format("eot"),
@@ -5,28 +6,19 @@
          url("/fonts/Colfax-Regular.woff") format("woff"),
          url("/fonts/Colfax-Regular.svg#Colfax-Regular") format("svg");
 }
-
 body {
     font-family: "Colfax", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Siyam Rupali", sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
-
 .title, body, button, h1, h2, h3, h4, h5, h6, input, select, textarea {
     font-family: "Colfax", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Siyam Rupali", sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
-
 p {
     color: #111;
 }
-
-/*
-.comments-container #disqus_thread:before, .entry+.list-container:before, .entry-header:after, .entry-nav-links:before, .footer:before, .prev-entry~.next-entry:before, .site-header:after {
-    border-bottom: .11111em solid #D17F15 !important;
-}
- */
 
 /* CONTENT LINK COLORS */
 .entry-content a {
@@ -41,4 +33,9 @@ p {
 /* COLOR OF BARS */
 .comments-container #disqus_thread:before, .entry+.home-sections-container .home-sections:before, .entry-nav:before, .footer:before, .header:after, .home-section+.home-section:before, .prev-entry~.next-entry:before {
     border-bottom: .125em solid #98700D !important;
+}
+
+/* Wideth of site*/
+.comments-container #disqus_thread, .entry-content, .entry-cover, .entry-cover figcaption, .entry-footer, .entry-nav, .entry-toc, .footer, .header, .home-sections, .list, .pagination, .term-cloud {
+    max-width: 920px;
 }
