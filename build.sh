@@ -1,15 +1,6 @@
 #!/bin/bash
 
-# This script rebuilds my Hugo site and commits
-# the changes inside of the /public folder. I have a 
-# separate repository where the deployed site lives.
-
-echo -e "\033[0;32mCleaning public directory...\033[0m"
-cd public
-shopt -s extglob
-rm -r !(.git)
-cd ..
-
+# This script rebuilds my Hugo site and commit to staticly hosted github site.s
 
 echo -e "\033[0;32mBuilding website...\033[0m"
 hugo
