@@ -1,9 +1,12 @@
 ---
 title: "Connect to Purdue CS files using SSHFS"
+authors: ["benweis"]
 date: 2016-12-12T12:00:00-05:00
 draft: false
-categories:
+tags:
   - purdue
+  - development
+  - homebrew
 ---
 
 Here’s a quick tutorial on how I access my Purdue CS files remotely so that I can still use all my preferred local development tools, like Sublime Text and my shell customizations.

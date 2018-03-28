@@ -1,8 +1,11 @@
 ---
 title: "Making sqlplus Usable"
+authors: ["benweis"]
 date: 2017-11-17T12:00:00-05:00
-categories:
+tags:
   - purdue
+  - sqlplus
+  - development
 ---
 
 I have been taking [CS 348: Information Systems](https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201820&subj_code_in=CS&crse_numb_in=34800) this semester and found that using sqlplus on the lab machines is borderline maddening.

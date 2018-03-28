@@ -1,5 +1,5 @@
 ---
-title: about
+title: About
 comments: false
 menu: main
 weight: -170

@@ -1,16 +1,24 @@
 baseURL = "http://www.benweis.me"
 title = "Benjamin Weis"
 theme = "minimo"
+# for smart copyright line, leave this blank and check [params.copyright]
+copyright = ""
 
 disqusShortname = "benweis"
 googleAnalytics = ""
 
-Paginate = 15
+Paginate = 5
 preserveTaxonomyNames = true
 enableRobotsTXT = true # generate robots.txt
+
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true
+
+enableEmoji = true
+
+# Missing translations will default to this content language
 defaultContentLanguage = "en"
-disablePathToLower = false
+# disablePathToLower = false
 
 [params.info]
   description = "Software Engineer and Burrito Enthusiast"
@@ -29,14 +37,23 @@ disablePathToLower = false
   suffix = ""
 
 [params.settings]
+# date & time format: https://golang.org/pkg/time/
   dateFormat = "2006, Jan 02"
   listDateFormat = "2006, Jan 02"
   hideEntryNavigation = ["page"] # boolean / array of sections
   recentPostsLength = 4
   hideSocialMenu = false
   showReadingTime = true
-  noTermCloudShuffle = false
-  homepageSections = ["recent_posts"]
+  taxonomyCloudShuffle = true
+  accentColor = "#98700D"
+
+[params.sidebar]
+  enable = true
+  sticky = true
+
+[params.widgets]
+  homepage = ["recent_posts"]
+  sidebar = ["about","taxonomy_cloud"]
 
 [params.opengraph.facebook]
   admins = [] # array of Facebook IDs
@@ -57,12 +74,10 @@ disablePathToLower = false
   linkedin = "bweis96"
   twitter = "Real_Ben_Weis"
 
-[params.social.config]
-  platforms = ["github","facebook","twitter","email","linkedin"]
-
 [taxonomies]
   author = "authors"
   category = "categories"
+  series = "series"
   tag = "tags"
 
 [permalinks]
@@ -70,12 +85,12 @@ disablePathToLower = false
 
 [[menu.main]]
   name = "Resume"
-  weight = -70
+  weight = -10
   identifier = "resume"
   url = "/ben_weis_resume.pdf"
 
 [blackfriday]
-hrefTargetBlank = true
+  hrefTargetBlank = true
 
 [languages]
   # edit this block for your own language
